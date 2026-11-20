@@ -1,0 +1,208 @@
+{
+  "collectionId": "TL-VAL-BENCH-V1",
+  "name": "TruthLens Real-vs-Fake Validation Collection (v1)",
+  "description": "Small verified known-labelled benchmark combining real & StyleGAN/deepfake face images and Celeb-DF v2 real & face-swap videos. Ground-truth labels are stored strictly separate from model inference.",
+  "sources": [
+    {
+      "name": "JamieWithofs/Deepfake-and-real-images (test split)",
+      "url": "https://huggingface.co/datasets/JamieWithofs/Deepfake-and-real-images",
+      "license": "Unspecified on HF card (derived from Kaggle Real vs Fake Faces / StyleGAN + real portrait corpora; research evaluation only)",
+      "sampleCount": 12,
+      "breakdown": {
+        "real": 6,
+        "fake": 6
+      },
+      "limitations": "Low-resolution 256x256 JPEG face crops; StyleGAN-era fakes differ from modern diffusion generators; EXIF metadata stripped by dataset preprocessing."
+    },
+    {
+      "name": "Celeb-DF v2 (subset via gonnerthetooner/deepfake_video_data)",
+      "url": "https://huggingface.co/datasets/gonnerthetooner/deepfake_video_data/tree/main/celebdf_v2",
+      "license": "Celeb-DF Academic Non-Commercial Research License (Li et al., CVPR 2020)",
+      "sampleCount": 4,
+      "breakdown": {
+        "real": 2,
+        "fake": 2
+      },
+      "limitations": "Small sample (n=4, single identity pair id0/id16); face-swap synthesis with H.264 compression; video clips lack audio tracks so AASIST audio spoofing is not exercised on these clips."
+    }
+  ],
+  "totalSamples": 16,
+  "items": [
+    {
+      "id": "VAL-IMG-F1",
+      "modality": "image",
+      "filename": "img_fake_01.jpg",
+      "relativePath": "datasets/validation_benchmark/images/img_fake_01.jpg",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "Fake (Class 0, test offset 10)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (test split)",
+      "sourceLicense": "Research / Unspecified upstream Kaggle mirror (StyleGAN / FFHQ-CelebA)",
+      "fileSizeBytes": 8270
+    },
+    {
+      "id": "VAL-IMG-F2",
+      "modality": "image",
+      "filename": "img_fake_02.jpg",
+      "relativePath": "datasets/validation_benchmark/images/img_fake_02.jpg",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "Fake (Class 0, test offset 11)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (test split)",
+      "sourceLicense": "Research / Unspecified upstream Kaggle mirror (StyleGAN / FFHQ-CelebA)",
+      "fileSizeBytes": 11301
+    },
+    {
+      "id": "VAL-IMG-F3",
+      "modality": "image",
+      "filename": "img_fake_03.jpg",
+      "relativePath": "datasets/validation_benchmark/images/img_fake_03.jpg",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "Fake (Class 0, test offset 12)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (test split)",
+      "sourceLicense": "Research / Unspecified upstream Kaggle mirror (StyleGAN / FFHQ-CelebA)",
+      "fileSizeBytes": 10916
+    },
+    {
+      "id": "VAL-IMG-F4",
+      "modality": "image",
+      "filename": "img_fake_04.jpg",
+      "relativePath": "datasets/validation_benchmark/images/img_fake_04.jpg",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "Fake (Class 0, test offset 13)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (test split)",
+      "sourceLicense": "Research / Unspecified upstream Kaggle mirror (StyleGAN / FFHQ-CelebA)",
+      "fileSizeBytes": 11390
+    },
+    {
+      "id": "VAL-IMG-F5",
+      "modality": "image",
+      "filename": "img_fake_05.jpg",
+      "relativePath": "datasets/validation_benchmark/images/img_fake_05.jpg",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "Fake (Class 0, test offset 14)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (test split)",
+      "sourceLicense": "Research / Unspecified upstream Kaggle mirror (StyleGAN / FFHQ-CelebA)",
+      "fileSizeBytes": 3198
+    },
+    {
+      "id": "VAL-IMG-F6",
+      "modality": "image",
+      "filename": "img_fake_06.jpg",
+      "relativePath": "datasets/validation_benchmark/images/img_fake_06.jpg",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "Fake (Class 0, test offset 15)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (test split)",
+      "sourceLicense": "Research / Unspecified upstream Kaggle mirror (StyleGAN / FFHQ-CelebA)",
+      "fileSizeBytes": 13735
+    },
+    {
+      "id": "VAL-IMG-R1",
+      "modality": "image",
+      "filename": "img_real_01.jpg",
+      "relativePath": "datasets/validation_benchmark/images/img_real_01.jpg",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "Real (Class 1, test offset 6010)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (test split)",
+      "sourceLicense": "Research / Unspecified upstream Kaggle mirror (CelebA / FFHQ)",
+      "fileSizeBytes": 10382
+    },
+    {
+      "id": "VAL-IMG-R2",
+      "modality": "image",
+      "filename": "img_real_02.jpg",
+      "relativePath": "datasets/validation_benchmark/images/img_real_02.jpg",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "Real (Class 1, test offset 6011)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (test split)",
+      "sourceLicense": "Research / Unspecified upstream Kaggle mirror (CelebA / FFHQ)",
+      "fileSizeBytes": 6570
+    },
+    {
+      "id": "VAL-IMG-R3",
+      "modality": "image",
+      "filename": "img_real_03.jpg",
+      "relativePath": "datasets/validation_benchmark/images/img_real_03.jpg",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "Real (Class 1, test offset 6012)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (test split)",
+      "sourceLicense": "Research / Unspecified upstream Kaggle mirror (CelebA / FFHQ)",
+      "fileSizeBytes": 6059
+    },
+    {
+      "id": "VAL-IMG-R4",
+      "modality": "image",
+      "filename": "img_real_04.jpg",
+      "relativePath": "datasets/validation_benchmark/images/img_real_04.jpg",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "Real (Class 1, test offset 6013)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (test split)",
+      "sourceLicense": "Research / Unspecified upstream Kaggle mirror (CelebA / FFHQ)",
+      "fileSizeBytes": 6341
+    },
+    {
+      "id": "VAL-IMG-R5",
+      "modality": "image",
+      "filename": "img_real_05.jpg",
+      "relativePath": "datasets/validation_benchmark/images/img_real_05.jpg",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "Real (Class 1, test offset 6014)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (test split)",
+      "sourceLicense": "Research / Unspecified upstream Kaggle mirror (CelebA / FFHQ)",
+      "fileSizeBytes": 14632
+    },
+    {
+      "id": "VAL-IMG-R6",
+      "modality": "image",
+      "filename": "img_real_06.jpg",
+      "relativePath": "datasets/validation_benchmark/images/img_real_06.jpg",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "Real (Class 1, test offset 6015)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (test split)",
+      "sourceLicense": "Research / Unspecified upstream Kaggle mirror (CelebA / FFHQ)",
+      "fileSizeBytes": 16123
+    },
+    {
+      "id": "VAL-VID-R1",
+      "modality": "video",
+      "filename": "vid_real_id0_0001.mp4",
+      "relativePath": "datasets/validation_benchmark/videos/vid_real_id0_0001.mp4",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "Celeb-real/id0_0001.mp4",
+      "sourceDataset": "Celeb-DF v2 (gonnerthetooner/deepfake_video_data)",
+      "sourceLicense": "Academic Non-Commercial Research Only (Celeb-DF v2 Terms)",
+      "fileSizeBytes": 1613400
+    },
+    {
+      "id": "VAL-VID-R2",
+      "modality": "video",
+      "filename": "vid_real_id0_0002.mp4",
+      "relativePath": "datasets/validation_benchmark/videos/vid_real_id0_0002.mp4",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "Celeb-real/id0_0002.mp4",
+      "sourceDataset": "Celeb-DF v2 (gonnerthetooner/deepfake_video_data)",
+      "sourceLicense": "Academic Non-Commercial Research Only (Celeb-DF v2 Terms)",
+      "fileSizeBytes": 1674293
+    },
+    {
+      "id": "VAL-VID-F1",
+      "modality": "video",
+      "filename": "vid_fake_id0_id16_0001.mp4",
+      "relativePath": "datasets/validation_benchmark/videos/vid_fake_id0_id16_0001.mp4",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "Celeb-synthesis/id0_id16_0001.mp4",
+      "sourceDataset": "Celeb-DF v2 (gonnerthetooner/deepfake_video_data)",
+      "sourceLicense": "Academic Non-Commercial Research Only (Celeb-DF v2 Terms)",
+      "fileSizeBytes": 1538579
+    },
+    {
+      "id": "VAL-VID-F2",
+      "modality": "video",
+      "filename": "vid_fake_id0_id16_0002.mp4",
+      "relativePath": "datasets/validation_benchmark/videos/vid_fake_id0_id16_0002.mp4",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "Celeb-synthesis/id0_id16_0002.mp4",
+      "sourceDataset": "Celeb-DF v2 (gonnerthetooner/deepfake_video_data)",
+      "sourceLicense": "Academic Non-Commercial Research Only (Celeb-DF v2 Terms)",
+      "fileSizeBytes": 1587725
+    }
+  ]
+}

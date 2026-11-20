@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "id": "DEV-IMG-F1",
+      "modality": "image",
+      "path": "/app/applet/datasets/dev_validation/images/dev_fake_1.jpg",
+      "gt": "fake",
+      "rawLabel": 0
+    },
+    {
+      "id": "DEV-IMG-F2",
+      "modality": "image",
+      "path": "/app/applet/datasets/dev_validation/images/dev_fake_2.jpg",
+      "gt": "fake",
+      "rawLabel": 0
+    },
+    {
+      "id": "DEV-IMG-F3",
+      "modality": "image",
+      "path": "/app/applet/datasets/dev_validation/images/dev_fake_3.jpg",
+      "gt": "fake",
+      "rawLabel": 0
+    },
+    {
+      "id": "DEV-IMG-F4",
+      "modality": "image",
+      "path": "/app/applet/datasets/dev_validation/images/dev_fake_4.jpg",
+      "gt": "fake",
+      "rawLabel": 0
+    },
+    {
+      "id": "DEV-IMG-R1",
+      "modality": "image",
+      "path": "/app/applet/datasets/dev_validation/images/dev_real_1.jpg",
+      "gt": "real",
+      "rawLabel": 1
+    },
+    {
+      "id": "DEV-IMG-R2",
+      "modality": "image",
+      "path": "/app/applet/datasets/dev_validation/images/dev_real_2.jpg",
+      "gt": "real",
+      "rawLabel": 1
+    },
+    {
+      "id": "DEV-IMG-R3",
+      "modality": "image",
+      "path": "/app/applet/datasets/dev_validation/images/dev_real_3.jpg",
+      "gt": "real",
+      "rawLabel": 1
+    },
+    {
+      "id": "DEV-IMG-R4",
+      "modality": "image",
+      "path": "/app/applet/datasets/dev_validation/images/dev_real_4.jpg",
+      "gt": "real",
+      "rawLabel": 1
+    },
+    {
+      "id": "DEV-VID-R1",
+      "modality": "video",
+      "path": "datasets/dev_validation/videos/id1_0000.mp4",
+      "gt": "real"
+    },
+    {
+      "id": "DEV-VID-R2",
+      "modality": "video",
+      "path": "datasets/dev_validation/videos/id1_0001.mp4",
+      "gt": "real"
+    },
+    {
+      "id": "DEV-VID-F1",
+      "modality": "video",
+      "path": "datasets/dev_validation/videos/id1_id0_0000.mp4",
+      "gt": "fake"
+    },
+    {
+      "id": "DEV-VID-F2",
+      "modality": "video",
+      "path": "datasets/dev_validation/videos/id1_id0_0001.mp4",
+      "gt": "fake"
+    }
+  ]
+}

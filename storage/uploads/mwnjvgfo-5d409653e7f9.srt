@@ -1,0 +1,7 @@
+1
+00:00:00,200 --> 00:00:01,800
+Welcome to the facility inspection briefing recorded at noon.
+
+2
+00:00:01,900 --> 00:00:03,400
+All safety sensors reported nominal readings across Building A.

@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix maybe fj",
+  "description": "Multimodal Digital Forensics, Deepfake Detection \u0026 AI Investigation Intelligence Platform",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

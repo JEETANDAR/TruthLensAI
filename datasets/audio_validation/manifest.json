@@ -1,0 +1,153 @@
+{
+  "collectionId": "TL-AUD-VAL-V1",
+  "name": "Real vs Synthetic Speech Audio Benchmark (CC-BY-4.0)",
+  "description": "Independent 12-clip real vs synthetic TTS audio validation set (6 YouTube human speech clips, 6 multi-vendor TTS deepfake clips). Ground truth isolated from inference.",
+  "sources": [
+    {
+      "name": "Deepfake Audio Detection Dataset v4 (garystafford)",
+      "url": "https://huggingface.co/datasets/garystafford/deepfake-audio-detection",
+      "license": "CC-BY-4.0",
+      "sampleCount": 12,
+      "breakdown": {
+        "real": 6,
+        "fake": 6
+      },
+      "limitations": "Contains modern commercial TTS voices (ElevenLabs/Hume/OpenAI) compressed as FLAC; out-of-distribution relative to AASIST ASVspoof2019-LA training weights."
+    }
+  ],
+  "totalSamples": 12,
+  "items": [
+    {
+      "id": "VAL-AUD-R1",
+      "modality": "audio",
+      "filename": "yt_0000_p2_part_167.flac",
+      "relativePath": "datasets/audio_validation/real/yt_0000_p2_part_167.flac",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "real (human speech)",
+      "sourceDataset": "garystafford/deepfake-audio-detection (HuggingFace)",
+      "sourceLicense": "CC-BY-4.0",
+      "fileSizeBytes": 477353
+    },
+    {
+      "id": "VAL-AUD-R2",
+      "modality": "audio",
+      "filename": "yt_0001_part_001.flac",
+      "relativePath": "datasets/audio_validation/real/yt_0001_part_001.flac",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "real (human speech)",
+      "sourceDataset": "garystafford/deepfake-audio-detection (HuggingFace)",
+      "sourceLicense": "CC-BY-4.0",
+      "fileSizeBytes": 489127
+    },
+    {
+      "id": "VAL-AUD-R3",
+      "modality": "audio",
+      "filename": "yt_0002_part_003.flac",
+      "relativePath": "datasets/audio_validation/real/yt_0002_part_003.flac",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "real (human speech)",
+      "sourceDataset": "garystafford/deepfake-audio-detection (HuggingFace)",
+      "sourceLicense": "CC-BY-4.0",
+      "fileSizeBytes": 791328
+    },
+    {
+      "id": "VAL-AUD-R4",
+      "modality": "audio",
+      "filename": "yt_0003_part_001.flac",
+      "relativePath": "datasets/audio_validation/real/yt_0003_part_001.flac",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "real (human speech)",
+      "sourceDataset": "garystafford/deepfake-audio-detection (HuggingFace)",
+      "sourceLicense": "CC-BY-4.0",
+      "fileSizeBytes": 451256
+    },
+    {
+      "id": "VAL-AUD-R5",
+      "modality": "audio",
+      "filename": "yt_0004_part_001.flac",
+      "relativePath": "datasets/audio_validation/real/yt_0004_part_001.flac",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "real (human speech)",
+      "sourceDataset": "garystafford/deepfake-audio-detection (HuggingFace)",
+      "sourceLicense": "CC-BY-4.0",
+      "fileSizeBytes": 582072
+    },
+    {
+      "id": "VAL-AUD-R6",
+      "modality": "audio",
+      "filename": "yt_0005_part_001.flac",
+      "relativePath": "datasets/audio_validation/real/yt_0005_part_001.flac",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "real (human speech)",
+      "sourceDataset": "garystafford/deepfake-audio-detection (HuggingFace)",
+      "sourceLicense": "CC-BY-4.0",
+      "fileSizeBytes": 348992
+    },
+    {
+      "id": "VAL-AUD-F1",
+      "modality": "audio",
+      "filename": "el_0001_c_part_002.flac",
+      "relativePath": "datasets/audio_validation/fake/el_0001_c_part_002.flac",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "fake (TTS synthetic voice)",
+      "sourceDataset": "garystafford/deepfake-audio-detection (HuggingFace)",
+      "sourceLicense": "CC-BY-4.0",
+      "fileSizeBytes": 131470
+    },
+    {
+      "id": "VAL-AUD-F2",
+      "modality": "audio",
+      "filename": "el_0002_c_part_001.flac",
+      "relativePath": "datasets/audio_validation/fake/el_0002_c_part_001.flac",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "fake (TTS synthetic voice)",
+      "sourceDataset": "garystafford/deepfake-audio-detection (HuggingFace)",
+      "sourceLicense": "CC-BY-4.0",
+      "fileSizeBytes": 98685
+    },
+    {
+      "id": "VAL-AUD-F3",
+      "modality": "audio",
+      "filename": "el_0003_c_part_004.flac",
+      "relativePath": "datasets/audio_validation/fake/el_0003_c_part_004.flac",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "fake (TTS synthetic voice)",
+      "sourceDataset": "garystafford/deepfake-audio-detection (HuggingFace)",
+      "sourceLicense": "CC-BY-4.0",
+      "fileSizeBytes": 117255
+    },
+    {
+      "id": "VAL-AUD-F4",
+      "modality": "audio",
+      "filename": "el_0004_c_part_001.flac",
+      "relativePath": "datasets/audio_validation/fake/el_0004_c_part_001.flac",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "fake (TTS synthetic voice)",
+      "sourceDataset": "garystafford/deepfake-audio-detection (HuggingFace)",
+      "sourceLicense": "CC-BY-4.0",
+      "fileSizeBytes": 132532
+    },
+    {
+      "id": "VAL-AUD-F5",
+      "modality": "audio",
+      "filename": "el_0005_part_001.flac",
+      "relativePath": "datasets/audio_validation/fake/el_0005_part_001.flac",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "fake (TTS synthetic voice)",
+      "sourceDataset": "garystafford/deepfake-audio-detection (HuggingFace)",
+      "sourceLicense": "CC-BY-4.0",
+      "fileSizeBytes": 161273
+    },
+    {
+      "id": "VAL-AUD-F6",
+      "modality": "audio",
+      "filename": "el_0006_c_part_002.flac",
+      "relativePath": "datasets/audio_validation/fake/el_0006_c_part_002.flac",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "fake (TTS synthetic voice)",
+      "sourceDataset": "garystafford/deepfake-audio-detection (HuggingFace)",
+      "sourceLicense": "CC-BY-4.0",
+      "fileSizeBytes": 96568
+    }
+  ]
+}

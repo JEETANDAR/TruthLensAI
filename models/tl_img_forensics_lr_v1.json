@@ -1,0 +1,47 @@
+{
+  "modelId": "TL-ImgForensics-LR-v1",
+  "name": "TruthLens Image Forensics Logistic Regression",
+  "version": "1.0.0",
+  "algorithm": "LogisticRegression",
+  "featureNames": [
+    "elaMean",
+    "elaP95",
+    "elaSpatialVariance",
+    "noiseFloorStd",
+    "blockArtifactRatio",
+    "saturationSkew",
+    "exifIntegrityMissing",
+    "highFreqDropRatio"
+  ],
+  "scalerMean": [
+    4.5009283127160025,
+    16.35274512548662,
+    9.364794775405388,
+    5.873979472742459,
+    0.39551954518861815,
+    0.21823277587309492,
+    0.5119047619047619,
+    0.4903164462002471
+  ],
+  "scalerStd": [
+    2.687936659533479,
+    9.67119617857535,
+    7.755946600667899,
+    2.851104254041813,
+    0.21553701435913342,
+    0.12692497880576406,
+    0.49985825655278654,
+    0.22904537616865756
+  ],
+  "weights": [
+    0.72718,
+    0.762667,
+    0.737721,
+    -0.666572,
+    0.726929,
+    1.152229,
+    0.286502,
+    0.991892
+  ],
+  "bias": 0.197511
+}

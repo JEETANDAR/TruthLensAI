@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+storage/truthlens.db*
+storage/uploads/*
+storage/artifacts/*
+storage/reports/*
+storage/datasets/*
+e2e_screenshots
+.aistudio

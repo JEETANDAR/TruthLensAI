@@ -1,0 +1,39 @@
+{
+  "modelId": "TL-AudSpoof-LR-v1",
+  "name": "TruthLens Acoustic Anti-Spoofing Classifier",
+  "version": "1.0.0",
+  "algorithm": "LogisticRegression",
+  "featureNames": [
+    "spectralFlatnessMean",
+    "spectralFlatnessStd",
+    "zcrVariance",
+    "highFreqRolloffRatio",
+    "silenceFloorKurtosis",
+    "harmonicJitter"
+  ],
+  "scalerMean": [
+    0.3414586285888419,
+    0.1084688256721691,
+    0.027621508734216208,
+    0.5454558112797824,
+    3.6747286306936227,
+    0.1305667554012582
+  ],
+  "scalerStd": [
+    0.13744037693114017,
+    0.047443210914669166,
+    0.01374429256301426,
+    0.1939621933113885,
+    1.7213976277782053,
+    0.0744969715180991
+  ],
+  "weights": [
+    0.816874,
+    -0.970921,
+    -0.882,
+    1.22915,
+    0.85493,
+    -0.949293
+  ],
+  "bias": 0.084544
+}

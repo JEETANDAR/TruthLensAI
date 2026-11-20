@@ -1,0 +1,158 @@
+{
+  "collectionId": "TL-DEV-BENCH-V1",
+  "name": "TruthLens Development Validation Set (Disjoint Dev Split)",
+  "description": "Separate development set used for root-cause diagnostics, preprocessing verification, and model selection (never used for final held-out reporting).",
+  "sources": [
+    {
+      "name": "JamieWithofs/Deepfake-and-real-images (validation split)",
+      "url": "https://huggingface.co/datasets/JamieWithofs/Deepfake-and-real-images",
+      "license": "Unspecified on HF card (research evaluation only)",
+      "sampleCount": 8,
+      "breakdown": { "real": 4, "fake": 4 },
+      "limitations": "256x256 JPEG face crops from validation split (strictly disjoint from test split)."
+    },
+    {
+      "name": "Celeb-DF v2 (id1 subset, disjoint from id0 held-out test)",
+      "url": "https://huggingface.co/datasets/gonnerthetooner/deepfake_video_data/tree/main/celebdf_v2",
+      "license": "Celeb-DF Academic Non-Commercial Research License (Li et al., CVPR 2020)",
+      "sampleCount": 4,
+      "breakdown": { "real": 2, "fake": 2 },
+      "limitations": "Identity id1 H.264 video clips without audio tracks (strictly disjoint from id0 held-out test clips)."
+    }
+  ],
+  "totalSamples": 12,
+  "items": [
+    {
+      "id": "DEV-IMG-F1",
+      "modality": "image",
+      "filename": "dev_fake_1.jpg",
+      "relativePath": "datasets/dev_validation/images/dev_fake_1.jpg",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "Fake (Class 0, validation offset 20)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (validation split)",
+      "sourceLicense": "Research evaluation only",
+      "fileSizeBytes": 8000
+    },
+    {
+      "id": "DEV-IMG-F2",
+      "modality": "image",
+      "filename": "dev_fake_2.jpg",
+      "relativePath": "datasets/dev_validation/images/dev_fake_2.jpg",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "Fake (Class 0, validation offset 21)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (validation split)",
+      "sourceLicense": "Research evaluation only",
+      "fileSizeBytes": 8000
+    },
+    {
+      "id": "DEV-IMG-F3",
+      "modality": "image",
+      "filename": "dev_fake_3.jpg",
+      "relativePath": "datasets/dev_validation/images/dev_fake_3.jpg",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "Fake (Class 0, validation offset 22)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (validation split)",
+      "sourceLicense": "Research evaluation only",
+      "fileSizeBytes": 8000
+    },
+    {
+      "id": "DEV-IMG-F4",
+      "modality": "image",
+      "filename": "dev_fake_4.jpg",
+      "relativePath": "datasets/dev_validation/images/dev_fake_4.jpg",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "Fake (Class 0, validation offset 23)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (validation split)",
+      "sourceLicense": "Research evaluation only",
+      "fileSizeBytes": 8000
+    },
+    {
+      "id": "DEV-IMG-R1",
+      "modality": "image",
+      "filename": "dev_real_1.jpg",
+      "relativePath": "datasets/dev_validation/images/dev_real_1.jpg",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "Real (Class 1, validation offset 25020)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (validation split)",
+      "sourceLicense": "Research evaluation only",
+      "fileSizeBytes": 8000
+    },
+    {
+      "id": "DEV-IMG-R2",
+      "modality": "image",
+      "filename": "dev_real_2.jpg",
+      "relativePath": "datasets/dev_validation/images/dev_real_2.jpg",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "Real (Class 1, validation offset 25021)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (validation split)",
+      "sourceLicense": "Research evaluation only",
+      "fileSizeBytes": 8000
+    },
+    {
+      "id": "DEV-IMG-R3",
+      "modality": "image",
+      "filename": "dev_real_3.jpg",
+      "relativePath": "datasets/dev_validation/images/dev_real_3.jpg",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "Real (Class 1, validation offset 25022)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (validation split)",
+      "sourceLicense": "Research evaluation only",
+      "fileSizeBytes": 8000
+    },
+    {
+      "id": "DEV-IMG-R4",
+      "modality": "image",
+      "filename": "dev_real_4.jpg",
+      "relativePath": "datasets/dev_validation/images/dev_real_4.jpg",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "Real (Class 1, validation offset 25023)",
+      "sourceDataset": "JamieWithofs/Deepfake-and-real-images (validation split)",
+      "sourceLicense": "Research evaluation only",
+      "fileSizeBytes": 8000
+    },
+    {
+      "id": "DEV-VID-R1",
+      "modality": "video",
+      "filename": "id1_0000.mp4",
+      "relativePath": "datasets/dev_validation/videos/id1_0000.mp4",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "Celeb-real/id1_0000.mp4",
+      "sourceDataset": "Celeb-DF v2 (id1 dev subset)",
+      "sourceLicense": "Academic Non-Commercial Research Only",
+      "fileSizeBytes": 817101
+    },
+    {
+      "id": "DEV-VID-R2",
+      "modality": "video",
+      "filename": "id1_0001.mp4",
+      "relativePath": "datasets/dev_validation/videos/id1_0001.mp4",
+      "groundTruthLabel": "real",
+      "rawDatasetLabel": "Celeb-real/id1_0001.mp4",
+      "sourceDataset": "Celeb-DF v2 (id1 dev subset)",
+      "sourceLicense": "Academic Non-Commercial Research Only",
+      "fileSizeBytes": 590185
+    },
+    {
+      "id": "DEV-VID-F1",
+      "modality": "video",
+      "filename": "id1_id0_0000.mp4",
+      "relativePath": "datasets/dev_validation/videos/id1_id0_0000.mp4",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "Celeb-synthesis/id1_id0_0000.mp4",
+      "sourceDataset": "Celeb-DF v2 (id1 dev subset)",
+      "sourceLicense": "Academic Non-Commercial Research Only",
+      "fileSizeBytes": 754136
+    },
+    {
+      "id": "DEV-VID-F2",
+      "modality": "video",
+      "filename": "id1_id0_0001.mp4",
+      "relativePath": "datasets/dev_validation/videos/id1_id0_0001.mp4",
+      "groundTruthLabel": "fake",
+      "rawDatasetLabel": "Celeb-synthesis/id1_id0_0001.mp4",
+      "sourceDataset": "Celeb-DF v2 (id1 dev subset)",
+      "sourceLicense": "Academic Non-Commercial Research Only",
+      "fileSizeBytes": 539383
+    }
+  ]
+}
